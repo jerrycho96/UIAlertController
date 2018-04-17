@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         let okAction = UIAlertAction(title: "종료", style: .default) { (action: UIAlertAction) -> Void in
             self.view.backgroundColor = UIColor.red
         }
-        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: { (action: UIAlertAction) -> Void in
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel) { (action: UIAlertAction) -> Void in
             self.view.backgroundColor = UIColor.green
-        })
+        }
         
         let testAction = UIAlertAction(title: "테스트", style: .default, handler:  nil)
         
