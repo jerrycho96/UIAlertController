@@ -18,9 +18,10 @@ class ViewController: UIViewController {
     @IBAction func buttonPress(_ sender: Any) {
         let myAlert = UIAlertController(title: "알림", message: "설정된 시간입니다.", preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: "종료", style: .default, handler: { (action: UIAlertAction) -> Void in
+        //후행 클로져(Trailing closuer)
+        let okAction = UIAlertAction(title: "종료", style: .default) { (action: UIAlertAction) -> Void in
             self.view.backgroundColor = UIColor.red
-        })
+        }
         let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: { (action: UIAlertAction) -> Void in
             self.view.backgroundColor = UIColor.green
         })
